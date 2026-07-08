@@ -14,7 +14,15 @@ The backend is organized around hexagonal architecture boundaries:
 - `adapter.out.persistence`: persistence implementation details.
 - `config`: Spring configuration and dependency wiring.
 
-Initial package markers are present only to make these boundaries explicit. Business classes should be added test-first when the first use case is defined.
+The first domain objects now live in `com.sewingconnect.domain.model`. They are pure Java objects with no Spring, web, or persistence dependency.
+
+Current domain concepts:
+
+- teacher and student identities
+- sewing courses with level, default duration, and capacity
+- planned course sessions with a time slot
+- student enrollments and cancellation state
+- value objects for email addresses, person names, and time slots
 
 ## Frontend Structure
 
