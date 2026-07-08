@@ -1,2 +1,4 @@
-@org.springframework.lang.NonNullApi
+/**
+ * Pure domain model for sewing course management.
+ */
 package com.sewingconnect.domain;

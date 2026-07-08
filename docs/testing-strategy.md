@@ -16,6 +16,8 @@ Use Cucumber scenarios for externally observable behavior and shared vocabulary 
 
 The initial Cucumber scenario only validates that the Spring test context can start. Future scenarios should describe sewing-course-management behavior before implementation.
 
+The domain model is covered with focused unit tests first. These tests exercise invariants such as capacity limits, duplicate enrollments, cancellation, and time-slot overlaps.
+
 ## Suggested First Business Scenarios
 
 Examples for future work:
