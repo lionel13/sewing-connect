@@ -21,6 +21,7 @@ class ProjectBootstrapSteps {
 
     @Then("the project bootstrap succeeds")
     void theProjectBootstrapSucceeds() {
-        assertThat(applicationContext.getApplicationName()).isEqualTo("sewing-connect");
+        assertThat(applicationContext.getEnvironment().getProperty("spring.application.name"))
+            .isEqualTo("sewing-connect");
     }
 }
